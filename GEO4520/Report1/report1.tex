@@ -1,0 +1,33 @@
+\documentclass[a4paper,UKenglish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fontenc,url}
+\usepackage{babel,textcomp}
+\usepackage[round]{natbib}
+%\urlstyle{sf}
+
+\title{Report1}
+\author{Kasper Skjegggestad}
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+
+\section{Goal}
+
+\section{ASTER DEM production}
+
+The DEM var generated with ASTER stereo image data Level 1B in Geomatica of PCI. The first object, after loading the image into the software, was to collect Global Controll Points (GCPs). On the NADIR image, reconaceble places in the map was found, mostly the pointed ends of lakes. The elevation and cooridnates for the points was gatherd from a DEM and maps from Kartverket. Kartværket had a tile map consisting of 9 tiles over the area of intrest. Each tile was used to ensure GCPs over the entire aeria. The points was then transfered to the backlooking image. Most GCPs had to be adjusted to represent the same point. Approximately 30 points was found althogheter, but some of the points was outside the aeria of the backlooking image. Therese points was therfore put to check in the backlooking image, so not to affect the DEM. Tie-points was then collected. PCI geomatica did this automaticly for me.
+Next i created an Epipolar image with 3N and 3B, now i can extract DEM. In the interface of 'Extract DEM automatically', I let most of the parameters stay on default, but change the terring to mountinus.
+
+\section{Orthoprojection}
+
+The 'Ortho Generation' step in PCI was done with both 3N and 3B and with my own DEM and Statens Kartverk DEM.
+
+\section{Analysis}
+
+In the newly generated DTM, there are some clear outliers that one will emidietly see. There are some high steep "mounteins" in the south. This is cloudes from the stellitte image. The clouds are blocking the satellittes view of the grund terrein, and we will therefor not get reliable data in therese aeraias. When adding countour lines over the ortophotho, some more erros are spottet. There are small hills in the lakes, that clearly should not be there. When calculating the difference beween the newly generated ASTER DEM, a DEM generated of silcast and karverkets DEM, it is reviled that the new DEM has larger errors in the south east and north west periferi. This systematic error is not precent when we look at the different between silcast and karverket, indicating that this error in the newly generated DEM only.
+
+\section{Conclution}
+
+\end{document}

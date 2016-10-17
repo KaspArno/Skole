@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.19)  17 OCT 2016 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2016.2.19)  17 OCT 2016 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"DEM generation from optical setellite stereo.tex"
-(./DEM generation from optical setellite stereo.tex
+**report1.tex
+(./report1.tex
 LaTeX2e <2016/02/01>
 Babel <3.9n> and hyphenation patterns for 80 languages loaded.
 (/opt/app-sync/texlive/uio-texmf/texmf-dist/tex/latex/base/article.cls
@@ -518,8 +518,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count88
 )
-(./DEM generation from optical setellite stereo.aux)
-\openout1 = `"DEM generation from optical setellite stereo.aux"'.
+(./report1.aux)
+\openout1 = `report1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -547,42 +547,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 11.
 
-(./DEM generation from optical setellite stereo.toc)
+(./report1.toc)
 \tf@toc=\write3
-\openout3 = `"DEM generation from optical setellite stereo.toc"'.
+\openout3 = `report1.toc'.
 
  [1
 
-{/opt/app-sync/texlive/uio-texmf/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 31.
-
-(./DEM generation from optical setellite stereo.bbl [2]) [3]
-(./DEM generation from optical setellite stereo.aux) ) 
+] [2] (./report1.aux) ) 
 Here is how much of TeX's memory you used:
- 2080 strings out of 493033
- 25026 string characters out of 6121489
- 82231 words of memory out of 5000000
- 5631 multiletter control sequences out of 15000+600000
- 7934 words of font info for 28 fonts, out of 8000000 for 9000
+ 2066 strings out of 493034
+ 24360 string characters out of 6121515
+ 80228 words of memory out of 5000000
+ 5622 multiletter control sequences out of 15000+600000
+ 7588 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 24i,6n,23p,1322b,202s stack positions out of 5000i,500n,10000p,200000b,80000s
-</opt/app-sync/texlive/ui
-o-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/app-sync/tex
-live/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/app-s
-ync/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt
-/app-sync/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></opt/app-sync/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-17.pfb></opt/app-sync/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy7.pfb></opt/app-sync/texlive/uio-texmf/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti10.pfb>
-Output written on "DEM generation from optical setellite stereo.pdf" (3 pages, 
-95652 bytes).
-PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 24i,6n,23p,928b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on report1.dvi (2 pages, 3748 bytes).
