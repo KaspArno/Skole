@@ -3,6 +3,7 @@
 \usepackage{fontenc,url}
 \usepackage{babel,textcomp}
 \usepackage[round]{natbib}
+%\usepackage{enumitem}
 %\urlstyle{sf}
 
 \title{DEM generation from optical satellite stereo}
@@ -13,26 +14,45 @@
 
 \section{Intro}
 
-Digital elevation models (DEM), or digital terrain models (DTM) are widely used in research by scientists in governmental, university and private organizations. It is particulary usefull for for geosientific applications such as glaciers and rockglaciers, geomorphology and georisk, hydrology, and land cover/ land use \citep{toutin08}. DTMs can, among other things, be used to find were a landslide might originate, locate precioitaions zones or find the voulm changes of a glacier. All researches based on DTMs will be derecly dependent on the quality of the DTM. The quality of a DTM depends on the method of how it was collected and generated. DTM can be generated with inSAR, LiDAR, and with stereoscopy. The last methot will be disscued here, and are based on \cite{toutin08} and \cite{toutin01}. 
-
-\section{Acquring data}
-
-Everything we see is in 3D, this is thanks to the fact that we have 2 eyes that catches the lightwaves from the objects we observe from two slightly different posisions. Knowing this, we can create 3D images withe the help of 2 cameras, or by taking a picture an object or scene from two slightly different positions. It is therse priniples that helps us create DEMs with optical satellite stereo. The difference/parallax between the two images will help us find the elevation of an object. In principle, we have 2 methodes of achiving stereo photho with satalites. Across-track stereoscopy from two different orbits, and along-track stereoscopy from the same orbit with one downlooking sensor (NADIR) and one backlooking or frontlooking sensor. The across-track stereoscopy will have photos taken on different dates, while the along-track stereoscopy photops are accuired withins secons apart from each other. This makes the images more similar to each other, and therfor more suited for image matching. ASTER (Advanced Spaceborne Termal Emission and Reflection Radiometer) is a satellitte with both a downward looking sensor, and a backwars looking one. ASTER was sent up to obtain high spatial resolution of the earth. The objectives of the along-track stero experiment were: to acuire cloud free stero coverage of 80$\%$ of the Earth' land surface beween 82$^{\circ}$N and 82$^{\circ}$S, and to produce, with commercial software. standard prodct DEMs at a rate of one per day \citep{toutin08}. Due to the high temporal resolution provided from ASTER, it's stereophotos are now one of the most used in DEM generation. There are several comersial of the shelf (COTS) softwares for processing stereo ASTER data and for generating DEMS, sutch as PCI Geomatica and silcAst. ASTER produses two types of data, level 1A and level 1B. Level 1A is the preferred data by photogrammetrist, and is the only source for generating the higher-level data products like DEMs and ortho-images. It is anotated with a lot of spacecraft ancillaru information, such as radimometric and geometric coefficients and georeferencing parameters computed and appended. Level 1B are projected to the map using the radiometric calibration and geometric correction coefficeint for resampling. 
+Digital elevation models (DEM), or digital terrain models (DTM) are widely used in research by scientists in governmental, university and private organizations. It is particulary usefull for for geosientific applications such as glaciers and rockglaciers, geomorphology and georisk, hydrology, and land cover/ land use \citep{toutin08}. By analysing DTMs you can, among other things, estimate were a landslide might originate, estimate precioitaions zones or estimate the voulm changes of a glacier. All researches based on DTMs will be derecly dependent on the quality of the DTM. The quality of a DTM depends on the method of how it was collected and generated. DTM can be generated with inSAR, LiDAR, and with stereoscopy. The last methot will be disscued here, and are based on Thierry Toutin papaers from 2001 and 2008.
 
 \section{Generating DEM}
-
-\cite{toutin01} describes the different processing steps to prouce DEMS from stereo images in broad terms a follows: 
+Everything we see is in 3D, this is thanks to the fact that we have 2 eyes that catches the lightwaves from the objects we observe from two slightly different posisions. Knowing this, we can create 3D images with the help of 2 cameras, or by taking a picture an object or scene from two slightly different positions. It is therse priniples that helps us create DEMs from optical satellite stereo. The difference/parallax between the two images will help us find the elevation of an object. In principle, we have 2 methodes of achiving stereo photho with satalites. Across-track stereoscopy from two different orbits, and along-track stereoscopy from the same orbit with one downlooking sensor (NADIR) and one backlooking or frontlooking sensor. The across-track stereoscopy will have photos taken on different dates, while the along-track stereoscopy photops are accuired withins secons apart from each other. This makes the images more similar to each other (e.i. same lighting), and therfor more suited for image matching.
+\cite{toutin01} describes the different processing steps to prouce DEMS from stereo images in the following terms: 
 
 \begin{enumerate}
-\item to acquire the stereo image data with supplementary information such a ephemeris and attitude data if availeble;
-\item to collect Global Controll Points (GCP) to compute or refine the stereo-model geometry;
-\item to extract the elevation parallax;
-\item to compute the 3d cartographic co-orinates using 3D stereo-intersection; and
-\item to create and post-process the DEM (filtering, 3D editing and moothing).
+\item acquire the stereo image data with supplementary information such a ephemeris and attitude data if availeble;
+\item collect Global Controll Points (GCP) to compute or refine the stereo-model geometry;
+\item extract the elevation parallax;
+\item compute the 3D cartographic co-orinates using 3D stereo-intersection; and
+\item create and post-process the DEM (filtering, 3D editing and moothing).
 \end{enumerate}
 
-ASTER provides stereo images of hige spaceial resolution. And since it creates along-track stereo images, they are well suited for image matching.Image matching is important to find the parallax of objcets in the two different photos.The process to extrackt elevation parallax is applied using the image grey-levels, the image features or a hybrid appoach. After the sereo image is acquired, GCPs should be collected. GCPs are collected in order to obtain a cartograpic sandard accuracy. They are collected by finding a point in both image were you know the coorinates and/or elevation. The GCPs should cover the full elevation range of the terraing, and to avoid extrapolation in planimetry, it should be spread at the border of the stereo-pair.
-After the stereo images and the GCPs are collected, commercial softwares like PCI Geomatica can do the rest of the steps for you more or less automatic (allowing you to choose and alternate some paramteres). While silcAst will not even require GCPs. SilcAst was developed exclusively for ASTER, and there is no informateion on the algorihms ib tgeur web side or in the public literature. Of all the DEMs analysed by \cite{toutin08}, the DEM from silcAst achives the lowest root mean square error of 6.1, even without the use of GCPs.
+\subsection{Acquring data}
+
+ ASTER (Advanced Spaceborne Termal Emission and Reflection Radiometer) is a satellitte with both a downward looking sensor, and a backwars looking sensor. ASTER was sent up to obtain high spatial resolution of the earth. The objectives ASTERs along-track stero experiment were; to acuire cloud free stero coverage of 80$\%$ of the Earth' land surface beween 82$^{\circ}$N and 82$^{\circ}$S, and to produce, with commercial software, standard prodct DEMs at a rate of one per day \citep{toutin08}. Due to the high temporal resolution provided from ASTER, it's stereophotos are now one of the most used in DEM generation. There are several comersial of the shelf (COTS) softwares for processing stereo ASTER data and for generating DEMS, such as PCI Geomatica and silcAst. ASTER produses two types of data, level 1A and level 1B. Level 1A is the preferred data by photogrammetrist. It is the raw image with only detector normalization and calibration. Level 1B is a geo-referenced image corrected for the systematic distortions due to the sensor, the platfomr and the Earth rotating and curvature \citep{toutin01}. 
+
+ ASTER provides stereo images of high spaceial resolution. And since it creates along-track stereo images, they are well suited for image matching. Image matching is important to find the parallax of objcets in the two different photos.The process to extrackt elevation parallax is applied using the image grey-levels, the image features or a hybrid appoach \citep{toutin08}. 
+
+\subsection{Global Controll Points}
+After the sereo image is acquired, GCPs should be collected. GCPs are collected in order to obtain a cartograpic sandard accuracy. They are collected by finding a point in both image were you know the coorinates and/or elevation. The GCPs should cover the full elevation range of the terraing, and to avoid extrapolation in planimetry, it should be spread at the border of the stereo-pair. \cite{toutin01} mentions three different types of GCPs that can be used:
+\begin{itemize}
+\item full control points with known XYZ co-ordinates;
+\item altimetric points with known Z co-ordinates; and
+\item tie points with unknown cartographic co-ordinates.
+\end{itemize}
+Tie points and points with known Z co-ordinates are usefull to fill in gaps where no XYZ GCP are placed, and they can reinforce the stereo geomtry. GCPs that are on only one of the images, whether that is because the point was not found in one image, or the point is outside the boarder of one image, can be used as complementary pionts to the stereo GCPs. They will aslo be helpull to avoid extrapoation in planimetru in areas where there are no stere GCP ehn combined with tie points \citep{toutin01}.
+
+It is the GCPs catographic and the images co-ordintes that mainly contoll the the final accuracy of the stere geometry. There are several ways of acquire the GCPs cartaphic data. Some exaples are GPS, air photo surveys, paper og digital maps, previosly ortho-rectified images, chip database. The accuracy of the GCPs will depend on the accuracy of witchever method was used in other to collect them, and in extend affect the stere model reconstruction and the final prodct. When GCPs are collected with high uncertainty, it is recomanden to increas the minimum number of GCPs \citep{toutin01}.
+
+\subsection{extraction of the elevation parallax}
+
+The elevation parallax can be extracted using image matching with two methods. Ether by computer-assisted(visual), or automatic methods. It is posible to integrade these two methods in order to get the strength of each one. With the computer-assisted method, a computer screen using a system of optics is used to realize the stereoscopic viewing. For spatial separated stereo images, two monitors or a split sceen are used with an optical system using mirror and/or convex lenses.
+
+
+
+
+After the stereo images and the GCPs are collected, commercial softwares like PCI Geomatica can do the rest of the steps for you more or less automatic (allowing you to choose and alternate some paramteres). While silcAst will not even require GCPs. SilcAst was developed exclusively for ASTER, and there is no informateion on the algorihms in their web side or in the public literature. Of all the DEMs analysed by \cite{toutin08}, the DEM from silcAst achives the lowest root mean square error of 6.1, even without the use of GCPs.
 
 \section{DEM accuracy}
 
