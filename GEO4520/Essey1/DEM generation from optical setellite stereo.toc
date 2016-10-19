@@ -1,5 +1,8 @@
 \select@language {UKenglish}
 \contentsline {section}{\numberline {1}Intro}{1}
-\contentsline {section}{\numberline {2}Acquring data}{1}
-\contentsline {section}{\numberline {3}Generating DEM}{2}
-\contentsline {section}{\numberline {4}DEM accuracy}{3}
+\contentsline {section}{\numberline {2}Generating DEM}{1}
+\contentsline {subsection}{\numberline {2.1}Acquiring data}{3}
+\contentsline {subsection}{\numberline {2.2}Global Control Points}{3}
+\contentsline {subsection}{\numberline {2.3}extraction of the elevation parallax}{4}
+\contentsline {subsection}{\numberline {2.4}Post-processing the DEM}{4}
+\contentsline {section}{\numberline {3}Conclution}{4}

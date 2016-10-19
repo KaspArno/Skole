@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.18)  18 OCT 2016 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.18)  19 OCT 2016 23:22
 entering extended mode
 **M:/Documents/Skole/GEO4520/Report1/report1.tex
 (M:/Documents/Skole/GEO4520/Report1/report1.tex
@@ -673,74 +673,130 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 pdfTeX warning: pdflatex.EXE (file pdftex.map): cannot open font map file
-] <images/3dbilde2.jpg, id=10, 241.85406pt x 131.23087pt>
-File: images/3dbilde2.jpg Graphic file (type jpg)
+] <images/DEM_NAN.png, id=10, 867.24pt x 650.43pt>
+File: images/DEM_NAN.png Graphic file (type png)
+ <use images/DEM_NAN.png>
+Package pdftex.def Info: images/DEM_NAN.png used on input line 44.
+(pdftex.def)             Requested size: 189.68182pt x 142.26378pt.
 
-<use images/3dbilde2.jpg>
-Package pdftex.def Info: images/3dbilde2.jpg used on input line 34.
-(pdftex.def)             Requested size: 419.5347pt x 227.62204pt.
+Overfull \hbox (17.18182pt too wide) in paragraph at lines 44--45
+ [][] 
+ []
 
-Overfull \hbox (74.5347pt too wide) in paragraph at lines 34--35
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 47.
+<images/hillshade.png, id=11, 867.24pt x 650.43pt>
+File: images/hillshade.png Graphic file (type png)
+ <use images/hillshade.png>
+Package pdftex.def Info: images/hillshade.png used on input line 50.
+(pdftex.def)             Requested size: 189.68182pt x 142.26378pt.
+
+Overfull \hbox (17.18182pt too wide) in paragraph at lines 50--51
+ [][] 
+ []
+
+[2] <images/3dbilde3.jpg, id=15, 241.85406pt x 131.23087pt>
+File: images/3dbilde3.jpg Graphic file (type jpg)
+
+<use images/3dbilde3.jpg>
+Package pdftex.def Info: images/3dbilde3.jpg used on input line 66.
+(pdftex.def)             Requested size: 351.3621pt x 190.63338pt.
+
+Overfull \hbox (6.3621pt too wide) in paragraph at lines 66--67
 [][] 
  []
 
-<images/DiffJotun-StatogSil.png, id=11, 867.24pt x 578.16pt>
-File: images/DiffJotun-StatogSil.png Graphic file (type png)
+[3 <./images/DEM_NAN.png (PNG copy)> <./images/hillshade.png (PNG copy)>]
+<images/StatJotunDiff.png, id=21, 867.24pt x 650.43pt>
+File: images/StatJotunDiff.png Graphic file (type png)
 
-<use images/DiffJotun-StatogSil.png>
-Package pdftex.def Info: images/DiffJotun-StatogSil.png used on input line 42.
-(pdftex.def)             Requested size: 341.42464pt x 227.62204pt.
+<use images/StatJotunDiff.png>
+Package pdftex.def Info: images/StatJotunDiff.png used on input line 80.
+(pdftex.def)             Requested size: 189.68182pt x 142.26378pt.
 
-<images/DiffJotun-Stat-Sil.png, id=13, 499.11469pt x 565.36218pt>
-File: images/DiffJotun-Stat-Sil.png Graphic file (type png)
+Overfull \hbox (17.18182pt too wide) in paragraph at lines 80--81
+ [][] 
+ []
 
-<use images/DiffJotun-Stat-Sil.png>
-Package pdftex.def Info: images/DiffJotun-Stat-Sil.png used on input line 47.
-(pdftex.def)             Requested size: 200.94464pt x 227.62204pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 53.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 53.
- [2 <./images/3dbilde2.jpg>] [3 <./images/DiffJotun-StatogSil.png> <./images/Di
-ffJotun-Stat-Sil.png>]
-<images/hist_SJD.jpg, id=22, 1204.5pt x 903.375pt>
+<images/SilcastJotunDiff.png, id=22, 867.24pt x 650.43pt>
+File: images/SilcastJotunDiff.png Graphic file (type png)
+
+<use images/SilcastJotunDiff.png>
+Package pdftex.def Info: images/SilcastJotunDiff.png used on input line 86.
+(pdftex.def)             Requested size: 189.68182pt x 142.26378pt.
+
+Overfull \hbox (17.18182pt too wide) in paragraph at lines 86--87
+ [][] 
+ []
+
+<images/StatSilcastDiff.png, id=23, 867.24pt x 650.43pt>
+File: images/StatSilcastDiff.png Graphic file (type png)
+
+<use images/StatSilcastDiff.png>
+Package pdftex.def Info: images/StatSilcastDiff.png used on input line 92.
+(pdftex.def)             Requested size: 189.68182pt x 142.26378pt.
+
+Overfull \hbox (17.18182pt too wide) in paragraph at lines 92--93
+ [][] 
+ []
+
+<images/hist_SJD.jpg, id=24, 1204.5pt x 903.375pt>
 File: images/hist_SJD.jpg Graphic file (type jpg)
  <use images/hist_SJD.jpg>
-Package pdftex.def Info: images/hist_SJD.jpg used on input line 59.
-(pdftex.def)             Requested size: 138.00052pt x 103.49309pt.
+Package pdftex.def Info: images/hist_SJD.jpg used on input line 103.
+(pdftex.def)             Requested size: 189.67299pt x 142.26378pt.
 
-<images/hist_SiJD.jpg, id=23, 562.1pt x 421.575pt>
+Overfull \hbox (17.17299pt too wide) in paragraph at lines 103--104
+ [][] 
+ []
+
+<images/hist_SiJD.jpg, id=25, 562.1pt x 421.575pt>
 File: images/hist_SiJD.jpg Graphic file (type jpg)
  <use images/hist_SiJD.jpg>
-Package pdftex.def Info: images/hist_SiJD.jpg used on input line 65.
-(pdftex.def)             Requested size: 138.00052pt x 103.49583pt.
+Package pdftex.def Info: images/hist_SiJD.jpg used on input line 109.
+(pdftex.def)             Requested size: 189.6877pt x 142.26378pt.
 
-<images/hist_SSiD.jpg, id=24, 562.1pt x 421.575pt>
+Overfull \hbox (17.1877pt too wide) in paragraph at lines 109--110
+ [][] 
+ []
+
+<images/hist_SSiD.jpg, id=26, 562.1pt x 421.575pt>
 File: images/hist_SSiD.jpg Graphic file (type jpg)
  <use images/hist_SSiD.jpg>
-Package pdftex.def Info: images/hist_SSiD.jpg used on input line 71.
-(pdftex.def)             Requested size: 138.00052pt x 103.49583pt.
+Package pdftex.def Info: images/hist_SSiD.jpg used on input line 115.
+(pdftex.def)             Requested size: 189.6877pt x 142.26378pt.
 
-[4 <./images/hist_SJD.jpg> <./images/hist_SiJD.jpg> <./images/hist_SSiD.jpg>]
-(report1.aux) ) 
+Overfull \hbox (17.1877pt too wide) in paragraph at lines 115--116
+ [][] 
+ []
+
+(report1.bbl) [4 <./images/3dbilde3.jpg>] [5 <./images/StatJotunDiff.png (PNG c
+opy)> <./images/SilcastJotunDiff.png (PNG copy)> <./images/StatSilcastDiff.png 
+(PNG copy)>] [6 <./images/hist_SJD.jpg> <./images/hist_SiJD.jpg> <./images/hist
+_SSiD.jpg>] (report1.aux) ) 
 Here is how much of TeX's memory you used:
- 4481 strings out of 493622
- 63341 string characters out of 3143634
- 125205 words of memory out of 3000000
- 7816 multiletter control sequences out of 15000+200000
- 7887 words of font info for 28 fonts, out of 3000000 for 9000
+ 4519 strings out of 493622
+ 63891 string characters out of 3143634
+ 128356 words of memory out of 3000000
+ 7847 multiletter control sequences out of 15000+200000
+ 8233 words of font info for 29 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,7n,40p,963b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\kaspersk\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pub
-lic\cm\dpi600\cmr9.pk> <C:\Users\kaspersk\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\public\cm\dpi600\cmr10.pk> <C:\Users\kaspersk\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\public\cm\dpi600\cmbx10.pk> <C:\Users\kaspersk\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\public\cm\dpi720\cmbx12.pk> <C:\Users\kaspersk\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi600\cmr12.pk> <C:\Users\kaspersk\App
-Data\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi600\cmr17.pk>
-Output written on report1.pdf (4 pages, 1424812 bytes).
+ 42i,7n,40p,1118b,442s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\kaspersk\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\public\cm\dpi600\cmti10.pk> <C:\Users\kaspersk\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\public\cm\dpi600\cmmi10.pk> <C:\Users\kaspersk\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi600\cmr9.pk> <C:\Users\kaspersk\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi600\cmr10.pk> <C:\Users\kaspersk
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi600\cmbx10.pk> <C:\Users
+\kaspersk\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi720\cmbx12.pk> 
+<C:\Users\kaspersk\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi600\cm
+r12.pk> <C:\Users\kaspersk\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\d
+pi600\cmr17.pk>
+Output written on report1.pdf (6 pages, 3135521 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
+ 283 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
